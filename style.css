@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body {
+    font-family: 'Red Hat Display';
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color:var(--Very-pale-blue) ;
+    text-align: center;
+}
+:root {
+--Pale-blue: hsl(225, 50%, 95%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(228, 60%, 88%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+.container {
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow:10px 10px 10px var(--Very-pale-blue) ;/*this line saved me it helped me put the card div inside the container  and i could add padding and margin to it  without the card div becoming bigger than container*/
+    display: block;
+}
+@media screen and (min-width: 400px){
+    .container {
+        margin:50px auto;
+        width: 400px;
+    }
+}
+#img {
+    width: 100%;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.plan {
+    box-sizing: border-box;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    overflow:hidden;
+    background-color: var(--Pale-blue);
+}
+.card {
+    padding: 10px 30px;
+}
+#info {
+    float: left;
+    margin-left: 5px;
+    line-height: 8px;
+    padding: 10px;
+}
+#change{
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+    color: var(--Bright-blue);
+    cursor: pointer;
+    text-decoration: underline;
+}
+#icon{
+    float: left;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+p {
+    opacity: 0.6;
+}
+.proceed{
+    display: block;
+    width: 100% ;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--Bright-blue);
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px var(--Very-pale-blue);
+}
+.cancel {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    margin: 20px auto;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 700;
+}
+#change:hover {
+    opacity : 0.7;
+    text-decoration: none;
+}
+.proceed:hover {
+    opacity : 0.7;
+}
+.cancel:hover {
+    opacity: 0.9;
+}
